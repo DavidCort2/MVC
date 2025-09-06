@@ -25,19 +25,24 @@ class Usuario{
 
     //SETTER
     function setNombre($nombre){
-        $this -> nombre = $nombre
+        $this -> nombre = $nombre;
     }
 
         function setApellidos($apellidos){
-        $this -> apellidos = $apellidos
+        $this -> apellidos = $apellidos;
     }
 
         function setEmail($email){
-        $this -> email = $email
+        $this -> email = $email;
     }
 
         function setPassword($password){
-        $this -> password = $password
+        $this -> password = $password;
+    }
+
+    //metodo que consulte la bd
+    public function conseguirTodos(){
+        echo "IMPRIMIENDO TODOS LOS USUARIOS ACTIVOS...";
     }
 }
 
