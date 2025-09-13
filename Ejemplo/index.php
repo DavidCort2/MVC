@@ -1,7 +1,10 @@
 <h1>Bienvenido a mi web</h1>
 <?php
 
-require_once './controllers/UsuarioController.php';
+// require_once './controllers/UsuarioController.php';
+// require_once './controllers/ProductoController.php';
+
+require_once 'autoload.php';
 
 $controlador = new UsuarioController;
 
