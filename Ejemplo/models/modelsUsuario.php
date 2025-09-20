@@ -65,10 +65,14 @@ class Usuario{
         $query = $this->db->query("SELECT * FROM t_usuario");
         return $query;
 
-        echo "IMPRIMIENDO TODOS LOS USUARIOS ACTIVOS...";
+        // echo "IMPRIMIENDO TODOS LOS USUARIOS ACTIVOS...";
     }
 
     public function crear(){
+        $sql = "INSERT INTO t_usuario (id_usuario,nombre,apellido,email,password,id_rol) VALUES({$this->id_usuario},'{$this->nombre}','{$this->apellido}','{$this->email}','{$this->password}', 1);";
 
+        $guardar = $this->db->query($sql);
+
+        return $guardar;
     }
 }
